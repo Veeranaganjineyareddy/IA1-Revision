@@ -13,7 +13,6 @@ void input_array(int n, int a[n])
     scanf("%d",&a[i]);
   }
 }
-
 int array_sum(int n, int a[n])
 {
   int sum=0;

@@ -1,5 +1,6 @@
 #include <stdio.h>
-typedef struct complex {
+typedef struct complex 
+{
     float real;
     float imag;
 } complex;

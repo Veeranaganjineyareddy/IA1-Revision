@@ -1,31 +1,30 @@
 #include<stdio.h>
-
 int input()
 {
-  int a;
-  printf("enter any value\n");
-  scanf("%d",&a);
-  return a;
+  int n;
+  printf("enter any number :");
+  scanf("%d",&n);
+  return n;
 }
-int sum_(int n)
+int numb(int n)
 {
-  int i,sum=0;
-  for(i=0;i<=n;i++)
-{
-sum=i+sum;
-printf("\nsum of %d+%d",i,sum);
+  int x;
+  x=(n*(n+1))/2;
+  return x;
 }
-return sum;
-}
-void output(int n,int sum)
+void output(int x,int n)
 {
-  printf("sum of %d is %d\n",n,sum);
+  int i;
+  for(i=1;i<n;i++)
+  {
+  printf("%d+",i);}
+  printf("%d=%d",n,x);
 }
 int main()
 {
-  int n,sum;
-  n=input();
-  sum=sum_(n);
-  output(n,sum);
+  int a,b;
+  a=input();
+  b=numb(a);
+  output(b,a);
   return 0;
 }

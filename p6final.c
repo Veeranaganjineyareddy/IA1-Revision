@@ -1,10 +1,7 @@
 #include <stdio.h>
-
-
 void input(char *a, char *b);
 int compare(char *a, char *b);
 void output(char *a, char *b, int ans);
-
 int main()
 {
   char a[20], b[20];
@@ -16,7 +13,6 @@ int main()
 
   return 0;
 }
-
 void input(char *a, char *b)
 {
     printf("Enter a string a: ");
@@ -25,8 +21,6 @@ void input(char *a, char *b)
     printf("Enter a string b: ");
     scanf("%s", b);
 }
-
-
 int compare(char *a, char *b)
 {
     int flag=0, i=0;  
@@ -37,9 +31,6 @@ int compare(char *a, char *b)
 
     return ind_dif;
 }
-
-
-
 void output(char *a, char *b, int ans)
 {
     if(ans < 0)
